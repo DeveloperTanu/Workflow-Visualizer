@@ -1,0 +1,9 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root{--bg:#F8FAFC;--surface:#fff;--fg:#18181B;--muted:#71717A;--line:#E4E4E7;--accent:#7C3AED}
+:root[data-theme="dark"]{--bg:#09090B;--surface:#18181B;--fg:#FAFAFA;--muted:#A1A1AA;--line:#27272A;--accent:#A78BFA}
+body{background:var(--bg);color:var(--fg);font-family:Inter,Geist,system-ui,sans-serif;font-size:14px}
+.btn{@apply border border-line bg-surface rounded px-3 py-1.5 hover:border-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent}
+.btn-pri{@apply bg-accent text-white border-accent}
+.card{@apply bg-surface border border-line rounded p-4}
+.react-flow{--xy-background-color:var(--bg);--xy-node-border-radius:8px}
+.react-flow__controls-button,.react-flow__minimap{background:var(--surface);color:var(--fg)}
